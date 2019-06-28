@@ -24,19 +24,7 @@ npm install npm@latest -g
 git clone https://github.com/PaaRRRR/Alarm-Watch.git
 ```
 
-2. Run npm install inside project root
-
-```
-npm install
-```
-
-3. Start the server
-
-```
-npm run start
-```
-
-4. Explore
+2. Explore
 
 ```
 Enjoy :)
