@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+    <title>Alarm</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+
+</head>
+<body>
+    <h1>알람시계</h1>
+
+    <div class="container">
+      <div class="alarmBox">
+        <h2>알람</h2>
+
+        <div class="formBox">
+          <h3 id="time-presenter"> Wed Jan~~</h3>
+          <form>
+            <label for="watch-mode">시계모드</label>
+            <select id="watch-mode">
+              <option>일반</option>
+              <option>진동</option>
+              <option>야간</option>
+            </select>
+
+            <br />
+
+            <label for="watch-time">시간 설정</label>
+            <input type="datetime-local" id="watch-time" value="2017-01-04T11:40">
+            <button id="watch-time-btn">설정하기</button>
+            <br />
+
+            <label for="alarm-mode">알람 모드</label>
+            <select id="alarm-mode">
+              <option>긴급</option>
+              <option>일반</option>
+            </select>
+
+            <input type="time" id="alarm-time" value="10:30" >
+
+            <label for="alarm-text">내용</label>
+            <input type="text" id="alarm-text" placeholder="주간회의">
+            <button id="alarm-btn">알람추가</button>
+          </form>
+        </div>
+
+        <ul id="alarm-list">
+          <!-- <li class="listChild" id="alarm-list-00">09:30출근
+            <span class="alarmListBtn offBtn">끄기</span>
+            <span class="alarmListBtn deleteBtn">삭제</span>
+          </li> -->
+        </ul>
+      </div>
+
+      <div class="messageBox">
+        <h2>메세지</h2>
+        <ul id="message-list">
+          <!-- <li class="listChild">{진동: 시간 주간 회의}</li>
+          <li class="listChild">!소리: 시간 주간 회의!</li>
+          <li class="listChild">~무음: 시간 주간 회의~</li> -->
+        </ul>
+      </div>
+    </div>
+
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

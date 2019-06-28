@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+}
+
+.alarmBox {
+  background-color: #96ceb4;
+  border: 1px solid black;
+  flex: 1;
+}
+
+.messageBox {
+  background-color: #ff6f69;
+  border: 1px solid black;
+  flex: 1;
+}
+
+
+.alarmListBtn {
+  cursor: pointer;
+  background-color: #ffeead;
+  border: 1px solid #ffcc5c;
+  border-radius: 5px;
+}
+
+.listChild {
+  margin: 5px 0;
+}
+
+.offList {
+  opacity: 0.5;
+}
